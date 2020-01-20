@@ -4,4 +4,4 @@ require_once "../app/init.php";
 
 
 
-new App();
+$app = new App();
