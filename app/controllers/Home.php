@@ -1,8 +1,11 @@
 <?php 
 
-class Home {
+class Home extends Controller {
 	public function index()
-	{
-		echo "ini controller Home method index";
+	{	
+		$data["name_page"]= "Home";
+		$this->view("templates/header",$data);
+		$this->view("home/index");
+		$this->view("templates/footer");
 	}
 }
